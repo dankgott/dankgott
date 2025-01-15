@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}HomePage | Cooger {% endblock %}
+
+{% block content %}
+<main>
+    <div class="content">
+        <h1>Task Master</h1>
+        {% if tasks %}
+            <p>You have {{ tasks|length }} tasks.</p>
+        {% else %}
+            <p>You have no tasks.</p>
+        {% endif %}
+
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Added</th>
+                <th>Actions</th>
+            </tr>
+            {% if tasks %}
+                {% for task in tasks %}
+                <tr>
+                    <td>{{ task.content }}</td>
+                    <td>{{ task.date_created.date() }}</td>
+                    
+                    <td>
+                        <a href="/delete/{{task.id}}" class="nav">Delete</a>
+                        <br>
+                        <a href="/update/{{task.id}}" class="nav">Update</a>
+                    </td>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="3">No tasks available</td>
+                </tr>
+            {% endif %}
+             
+        </table>
+    </div>
+</main>
+
+    <br>
+    <form action="/" method="POST" class="content">
+        <input type="text" name="content" id="content"><br>
+        <nav>
+            <input type="submit" value="Add Task">
+        </nav>
+    </form>
+{% endblock %}

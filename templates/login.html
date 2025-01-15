@@ -1,0 +1,41 @@
+{% extends 'home.html' %}
+
+{% block title %}<title>Log In</title>{% endblock %}
+{% block header %}
+{% endblock %}
+{% block content %}
+
+
+<style> 
+    body { 
+        
+        
+        
+        color: white; /* Change text color to be readable against the background */ 
+     } 
+</style>
+        <br>
+        <form method="post">
+            <div id="lb1">
+                {{ form.username.label(class="form-label") }}
+                {{ form.username(class="form-control") }}
+                {% for error in form.username.errors %}
+                    <div class="alert alert-danger">{{ error }}</div>
+                {% endfor %}
+                <label for="label", style="color: black; margin-left: 600px; background-size: cover;"><center><h1>Log in</h1></center></label>
+                <br><br>
+                <label for="username" style="color: black; margin-left: 200px;">Username</label>
+                <input name="username" id="username" required>
+                <label for="password" style="color: black;">Password</label>
+                <input type="password" name="password" id="password" required>
+                <input type="submit" value="Log In">
+                {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+            </div>
+        </form>
+{% endblock %}
