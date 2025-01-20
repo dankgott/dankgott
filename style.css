@@ -1,0 +1,135 @@
+body{
+    margin: 5px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: rgb(214, 212, 212);
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+    border-radius: 15px;
+}
+footer{
+    position:relative;
+    top: 330px;
+    clear: both;
+    padding: 25px;
+    display: block;
+    border-radius: 15px;  
+    background-color: rgb(214, 212, 212);
+}
+@media  screen and (max-width: 600px) {
+    main{
+        width: 100%;
+    }
+    
+}
+#box{
+    text-align: center;
+    font-size: 100px;
+    animation-name: slideLeft;
+    animation-duration: 5s;
+    text-shadow: 2px 2px 10px rgb(24, 24, 24);
+}
+#anim{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 2px 2px 10px rgb(24, 24, 24);
+    animation-name: slideRight;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-play-state:running; 
+}    
+@media {prefers-color-scheme: light;} {
+    body {
+        color: black;
+        background: white;
+    }
+}
+@media {prefers-color-scheme: dark;} {
+    body {
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+    }
+}
+@keyframes slideLeft {
+    from{transform: translateX(200px)}
+    
+}
+@keyframes slideRight{
+    50%{transform: translatex(-200px)}
+}    
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.navbar label{
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 5px;
+    left: 30px;
+    font-weight: 5px;
+}
+.navbar input{
+    top: -20px;
+    left: 150px;
+    padding: 5px;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    text-decoration: none;
+}
+.navbar input :hover{
+   color:hsl(0, 0%, 80%);
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+.navbar li{
+    float: left;
+}
+.picture{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 25px;
+    width: 200px;
+    border-radius: 15px;
+}
+.picture .description{
+    padding: 15px;
+    text-align: center;
+}
+.picture :hover{
+    border: 1px solid hsl(0, 0%, 23%);
+}
+.picture img{
+    width: 100%;
+    height: auto;
+}
+.pct {
+    border-radius: 20px;
+}
+input {
+    float: inherit;
+}
