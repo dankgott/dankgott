@@ -2,6 +2,11 @@
 
 Welcome to my GitHub profile! I'm a passionate developer always eager to learn and build new things. Here's a bit about my journey so far:
 
+- 🛠️ Open-source developer
+- 📦 Creator of [my pip package](https://pypi.org/project/your-package-name/)
+- ☕ [Buy Me a Coffee](https://buymeacoffee.com/dankgott)
+- 💡 Interested in Python, automation, and community-driven projects
+
 ## 🚀 Skills & Technologies
 
 - **Languages:**  
@@ -18,6 +23,11 @@ Welcome to my GitHub profile! I'm a passionate developer always eager to learn a
   - Web development
   - Deep Learning (currently learning!)
 
+## 📢 Latest Project
+
+Check out my latest Python package on PyPI:
+[![PyPI version](https://img.shields.io/pypi/v/your-package-name.svg)](https://pypi.org/project/fileauto/)
+
 ## 🛠️ What I'm Working On
 
 - **Deep Learning:** Exploring neural networks, computer vision, and AI concepts.
@@ -31,7 +41,13 @@ Started with Python and web basics (HTML, CSS, JS), built projects with Flask, a
 
 Feel free to check out my repositories, follow my progress, or reach out if you'd like to collaborate!
 
+## 🚀 Sponsor Me
+
+If you find my work helpful, consider [sponsoring me on GitHub](https://github.com/sponsors/dankgott) or [buying me a coffee](https://buymeacoffee.com/dankgott).
+
+
 ---
 
 > “The best way to predict the future is to invent it.” – Alan Kay
+> Thanks for visiting!
 
