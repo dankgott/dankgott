@@ -3,7 +3,7 @@
 Welcome to my GitHub profile! I'm a passionate developer always eager to learn and build new things. Here's a bit about my journey so far:
 
 - 🛠️ Open-source developer
-- 📦 Creator of [my pip package](https://pypi.org/project/your-package-name/)
+- 📦 Creator of [my pip package](https://pypi.org/project/fileauto/)
 - ☕ [Buy Me a Coffee](https://buymeacoffee.com/dankgott)
 - 💡 Interested in Python, automation, and community-driven projects
 
@@ -26,7 +26,7 @@ Welcome to my GitHub profile! I'm a passionate developer always eager to learn a
 ## 📢 Latest Project
 
 Check out my latest Python package on PyPI:
-[![PyPI version](https://img.shields.io/pypi/v/your-package-name.svg)](https://pypi.org/project/fileauto/)
+[![PyPI version](https://img.shields.io/pypi/v/fileauto.svg)](https://pypi.org/project/fileauto/)
 
 ## 🛠️ What I'm Working On
 
