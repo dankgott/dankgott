@@ -16,6 +16,7 @@ Welcome to my GitHub profile! I'm a passionate developer always eager to learn a
   ![HTML](https://img.shields.io/badge/-HTML5-orange?logo=html5&logoColor=white)  
   ![CSS](https://img.shields.io/badge/-CSS3-blue?logo=css3&logoColor=white)  
   ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=white)
+  ![sql]/![Mysql]
 
 - **Frameworks:**  
   ![Flask](https://img.shields.io/badge/-Flask-black?logo=flask&logoColor=white)  
@@ -44,7 +45,7 @@ Check out my latest Python package on PyPI:
 
 ## 🌱 Learning Journey
 
-Started with Python and web basics (HTML, CSS, JS), built projects with Flask, and now expanding into the exciting world of deep learning and Django. **I'm also focused on teaching what I know** through my new Python course!
+Started expanding into the exciting world of deep learning and Django. **I'm also focused on teaching what I know** through my new Python course!
 
 ---
 
