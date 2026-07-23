@@ -1,0 +1,28 @@
+/* Custom scrollbar and aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d1f18;
+}
+::-webkit-scrollbar-thumb {
+    background: #235240;
+    border-radius: 4px;
+}
+.hero-bg {
+    background: linear-gradient(135deg, rgba(13, 31, 24, 0.85) 0%, rgba(19, 46, 36, 0.9) 100%), url('https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&q=80&w=1600') center/cover;
+}
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
