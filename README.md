@@ -17,6 +17,7 @@ Welcome to my GitHub profile! I'm a passionate developer always eager to learn a
   ![CSS](https://img.shields.io/badge/-CSS3-blue?logo=css3&logoColor=white)  
   ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=white)
   ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+  ![SQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 
 - **Frameworks:**  
@@ -25,6 +26,7 @@ Welcome to my GitHub profile! I'm a passionate developer always eager to learn a
 
 - **Interests:**  
   - Web development
+  - Web Desigining 
   - Deep Learning (currently learning!)
 
 ---
