@@ -3,7 +3,7 @@
 Welcome to my GitHub profile! I'm a passionate developer always eager to learn and build new things. Here's a bit about my journey so far:
 
 - 🛠️ Open-source developer
-- 📦 Creator of [my pip package](https://pypi.org/project/fileauto/)
+- 📦 Creator of [Fileauto](https://pypi.org/project/fileauto/)
 - ☕ [Buy Me a Coffee](https://buymeacoffee.com/dankgott)
 - 💡 Interested in Python, automation, and community-driven projects
 
