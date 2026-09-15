@@ -2,7 +2,7 @@
 
 Welcome to my GitHub profile! I’m a web developer and aspiring ML engineer, passionate about building interactive apps, exploring AI, and sharing knowledge through open-source projects.
 
-- 🛠️ Open-source developer
+- 🛠️ Open-source contributer
 - 📦 Creator of [Fileauto](https://pypi.org/project/fileauto/)
 - ☕ [Buy Me a Coffee](https://buymeacoffee.com/dankgott)
 - 💡 Interested in Python, automation, and community-driven projects
@@ -30,18 +30,22 @@ Welcome to my GitHub profile! I’m a web developer and aspiring ML engineer, pa
   ![Numpy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
   ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557c?logo=plotly&logoColor=white)
 
-- **Interests:**  
-  - Web development & UI/UX
+- **Interests:**
   - Interactive Canvas animations & JavaScript games
+  - Web development & UI/UX
   - Machine learning & deep learning fundamentals
   - Building ML-powered mini‑apps
 
 ---
 
+## Projects
+  - 🛡️ SMS Spam Moderation & Analytics Dashboard
+
 ## 📢 Latest Project
 
-Check out my latest is a 🛡️ SMS Spam Moderation & Analytics Dashboard
-[![PyPI version](https://img.shields.io/pypi/v/fileauto.svg)]((https://github.com/dankgott/shakur_mm/tree/main))
+Check out my latest is a boutique manager build in streamlit framework
+Repository: https://github.com/dankgott/shakur_mm/tree/main
+Check it out on this Url: https://wgkvkdkoutndwsmpxutwkp.streamlit.app/
 
 ---
 
