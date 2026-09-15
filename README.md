@@ -39,7 +39,7 @@ Welcome to my GitHub profile! I’m a web developer and aspiring ML engineer, pa
 ---
 
 ## Projects
-  - 🛡️ SMS Spam Moderation & Analytics Dashboard
+  - 🛡️ SMS Spam Moderation & Analytics Dashboard https://dankgottdersieger.pythonanywhere.com/
   - Discord Chatbot
 
 ---
