@@ -43,8 +43,11 @@ Welcome to my GitHub profile! I’m a **web developer** and **aspiring ML engine
 - 🛡️ **SMS Spam Moderation & Analytics Dashboard** → [Live Demo](https://dankgottdersieger.pythonanywhere.com/)  
   *Real-time spam detection with analytics dashboard.*  
 
-- 🤖 **Discord Chatbot**  
-  *Automated responses and moderation for community servers.*  
+- 🤖 **Discord Chatbot** → MARS+TECH
+   *Automated responses and moderation for community servers.*
+
+- 👩‍💻 **Html/Css/Js** → [Repo](https://github.com/dankgott/Code_ed.0.1) | [Live App](https://dankgott.github.io/Code_ed.0.1/) 
+  *Online Code Editor for beginners* 
 
 - 🛍️ **Boutique Manager (Streamlit)** → [Repo](https://github.com/dankgott/shakur_mm/tree/main) | [Live App](https://wgkvkdkoutndwsmpxutwkp.streamlit.app/)  
   *Inventory & sales management tool built with Streamlit.*  
