@@ -37,6 +37,10 @@ Welcome to my GitHub profile! I’m a **web developer** and **aspiring ML engine
 - Building ML-powered mini‑apps  
 
 ---
+## Portfolio
+- **Modern portfolio** → [Live Demo](https://dankgott.github.io/dankgott/)
+
+---
 
 ## 📂 Featured Projects
 
