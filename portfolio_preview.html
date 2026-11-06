@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dankgott Dersieger - Creative Developer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Add to your existing <style> block */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Dark mode overrides */
+        .dark body {
+            background-color: #111827; /* gray-900 */
+            color: #f3f4f6; /* gray-100 */
+        }
+
+        .dark .bg-white { background-color: #111827; }
+        .dark .bg-gray-50 { background-color: #1f2937; }
+        .dark .text-black { color: #f9fafb; }
+        .dark .text-gray-700, .dark .text-gray-600 { color: #9ca3af; }
+        .dark .border-gray-200 { border-color: #374151; }
+        .dark .border-black { border-color: #f9fafb; }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- 1. Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6 backdrop-blur-sm bg-white/80">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-black tracking-widest text-black hover:text-indigo-600 transition duration-200">
+                DD.
+            </a>
+            <div class="flex space-x-6">
+                <a href="#about" class="nav-link text-sm font-semibold text-gray-700 transition duration-300 uppercase tracking-wider">ABOUT</a>
+                <a href="#showcase" class="nav-link text-sm font-semibold text-gray-700 transition duration-300 uppercase tracking-wider">SHOWCASE</a>
+                <a href="#work" class="nav-link text-sm font-semibold text-gray-700 transition duration-300 uppercase tracking-wider">WORK</a>
+                <a href="#contact" class="nav-link text-sm font-semibold text-gray-700 transition duration-300 uppercase tracking-wider">CONTACT</a>
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 transition">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <header id="home" class="pt-32 pb-16 min-h-screen bg-white text-black flex items-center">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-8">
+                    <p class="text-xl sm:text-2xl font-light text-gray-600 mb-4 tracking-tight">
+                        Hello! I’m Dankgott Dersieger,
+                    </p>
+                    <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black leading-tight tracking-tighter">
+                        Backend Developer <span class="text-indigo-600">&</span>
+                        <br>
+                        Data Enthusiast.
+                    </h1>
+                    <p class="mt-8 text-lg max-w-xl text-gray-700">
+                        I specialize in building robust, performant web applications using Python/Flask and scalable relational databases.
+                    </p>
+                    <a href="#work" class="mt-10 inline-flex items-center px-6 py-3 text-base font-semibold rounded-full text-white bg-black border-2 border-black hover:bg-indigo-600 hover:border-indigo-600 transition duration-300 transform hover:scale-105 shadow-xl">
+                        View Latest Work
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 3. About Section -->
+        <section id="about" class="reveal py-20 lg:py-32 bg-gray-50 text-black border-t border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-2">
+                    <h2 class="text-4xl font-black mb-6 border-b-4 border-indigo-600 pb-2 inline-block">
+                        My Focus
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        I focus on developing resilient and efficient server-side logic, coupled with accessible and clean frontend implementation.
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 space-y-6">
+                    <p class="text-xl font-medium text-gray-800">
+                        With solid experience in the **Python** ecosystem, I build complete web solutions. My expertise spans database design (**SQL**) to application architecture (**Flask**) and interactive client-side scripting (**JavaScript/HTML/CSS**).
+                    </p>
+                    <div class="pt-4">
+                        <h3 class="text-2xl font-semibold mb-4 text-indigo-600">Toolbox</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">Python</span>
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">Flask</span>
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">HTML5</span>
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">CSS3 (Tailwind)</span>
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">JavaScript (ES6+)</span>
+                            <span class="px-4 py-2 text-sm font-bold rounded-full border-2 border-black text-black bg-white cursor-default shadow-md">SQL (Database Design)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Technical Showcase Section -->
+        <section id="showcase" class="reveal py-20 lg:py-32 bg-white text-black border-t border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-black mb-12 text-black">Technical Showcase.</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Placeholder cards -->
+                    <div class="p-6 border-2 border-black rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-black text-black mb-4">Python Optimization</h3>
+                        <p class="text-md text-gray-700 mb-6">Highlight your code refactoring skills here by showing "Before and After" code snippets.</p>
+                    </div>
+                    <div class="p-6 border-2 border-black rounded-xl shadow-lg">
+                        <h3 class="text-3xl font-black text-black mb-4">Database Architecture</h3>
+                        <p class="text-md text-gray-700 mb-6">Showcase complex SQL queries or database schema diagrams you have designed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Work Section -->
+        <section id="work" class="reveal py-20 lg:py-32 bg-gray-900 text-white border-t border-gray-700">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-black mb-4 text-white">Selected Work.</h2>
+                <p class="text-xl text-indigo-400 mb-12">Projects showcasing full-stack development.</p>
+                <div id="projects-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Inside <div id="projects-container" class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
+
+                    <!-- Project 1: Web Application -->
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300">
+                        <div class="text-indigo-400 mb-4 font-bold text-sm uppercase tracking-widest">Web Development</div>
+                        <h3 class="text-2xl font-black text-white mb-2">Community Hub</h3>
+                        <p class="text-gray-400 mb-6">A full-stack application built with Flask and MySQL, featuring user authentication and dynamic discussion forums.</p>
+                        <a href="#" class="text-indigo-400 font-bold hover:text-white transition">View Code →</a>
+                    </div>
+
+                    <!-- Project 2: Data Analysis -->
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300">
+                        <div class="text-indigo-400 mb-4 font-bold text-sm uppercase tracking-widest">Data Analysis</div>
+                        <h3 class="text-2xl font-black text-white mb-2">Inventory Auditor</h3>
+                        <p class="text-gray-400 mb-6">An automated tool designed to scan large datasets for anomalies, price discrepancies, and missing SKU information.</p>
+                        <a href="#" class="text-indigo-400 font-bold hover:text-white transition">View Analysis →</a>
+                    </div>
+
+                    <!-- Project 3: 3D/AI Interface -->
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300">
+                        <div class="text-indigo-400 mb-4 font-bold text-sm uppercase tracking-widest">3D & AI</div>
+                        <h3 class="text-2xl font-black text-white mb-2">NEURAL_MESH</h3>
+                        <p class="text-gray-400 mb-6">An interactive Three.js landing page for creators that features an AI-powered critique system for visual assets.</p>
+                        <a href="#" class="text-indigo-400 font-bold hover:text-white transition">Explore Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <footer id="contact" class="bg-white border-t border-gray-200 py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-black text-black mb-4">Ready to build something unique?</h3>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    I’m currently available for freelance opportunities or full-time roles focused on innovative backend and data challenges.
+                </p>
+                <a href="mailto:houndadmartin@gmail.com" class="inline-flex items-center px-10 py-4 text-lg font-bold rounded-full text-white bg-indigo-600 border-4 border-indigo-600 hover:bg-indigo-700 hover:border-indigo-700 transition duration-300 shadow-xl">
+                    Let's Start a Project
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+    // 1. Observer for BOTH Navigation and Reveal Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -20% 0px', // Trigger when elements are in the middle 60% of the screen
+            threshold: 0 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Trigger Reveal Effect
+                    entry.target.classList.add("active");
+
+                    // Update Nav Colors
+                    const activeId = entry.target.getAttribute("id");
+                    document.querySelectorAll(".nav-link").forEach((link) => {
+                        link.classList.remove("text-indigo-600");
+                        link.classList.add("text-gray-700");
+                        
+                        // Match the ID to the link's href
+                        if (link.getAttribute("href") === `#${activeId}`) {
+                            link.classList.remove("text-gray-700");
+                            link.classList.add("text-indigo-600");
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections, header, and footer
+        document.querySelectorAll("section, header, footer").forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check saved preference
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            themeIcon.innerText = '☀️';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.innerText = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeIcon.innerText = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>

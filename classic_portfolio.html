@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Timeless Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .classic-border { border: 1px solid #e2e8f0; }
+        .dark .classic-border { border-color: #334155; }
+        .dark { background-color: #0f172a; color: #f1f5f9; }
+        .dark .bg-white { background-color: #0f172a; }
+        .dark .text-slate-900 { color: #f8fafc; }
+        .dark .text-slate-600 { color: #94a3b8; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 transition-colors duration-300">
+
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b border-slate-100 dark:border-slate-800 transition-colors">
+        <div class="container mx-auto px-6 py-6 flex items-center justify-between">
+            <span class="text-lg font-medium tracking-tight uppercase">DANKGOTT DERSIEGER.</span>
+            <div class="flex items-center gap-8 text-xs uppercase tracking-widest font-medium">
+                <a href="#about" class="hover:opacity-60 transition">About</a>
+                <a href="#projects" class="hover:opacity-60 transition">Work</a>
+                <button id="themeToggle" class="opacity-70 hover:opacity-100 transition">
+                    Dark
+                </button>
+                <a href="#contact" class="px-4 py-2 border border-slate-900 dark:border-white hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-24 md:py-32">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-light mb-8 leading-tight">Digital designer and developer <br/> based in London.</h1>
+            <div class="flex gap-4">
+                <a href="#" download class="px-6 py-3 border border-slate-900 dark:border-slate-400 font-medium text-sm uppercase tracking-wide hover:bg-slate-50 dark:hover:bg-slate-800 transition">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 border-t border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-xs uppercase tracking-widest text-slate-500 mb-12">Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="mb-4">UI/UX</div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Crafting intuitive and clean interfaces.</p>
+                </div>
+                <div>
+                    <div class="mb-4">Frontend</div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">High-performance responsive code.</p>
+                </div>
+                <div>
+                    <div class="mb-4">Branding</div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Visual identity and typography.</p>
+                </div>
+                <div>
+                    <div class="mb-4">Strategy</div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Solving complex user problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 border-t border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-xs uppercase tracking-widest text-slate-500 mb-12">Selected Projects</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="classic-border p-8">
+                    <div class="h-64 bg-slate-100 dark:bg-slate-800 mb-6"></div>
+                    <h3 class="font-medium mb-2">Modern Archive</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Digital preservation platform.</p>
+                </div>
+                <div class="classic-border p-8">
+                    <div class="h-64 bg-slate-100 dark:bg-slate-800 mb-6"></div>
+                    <h3 class="font-medium mb-2">Minimalist E-comm</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Direct-to-consumer store.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 border-t border-slate-100 dark:border-slate-800">
+        <div class="container mx-auto px-6 max-w-xl">
+            <h2 class="text-xs uppercase tracking-widest text-slate-500 mb-12">Contact</h2>
+            <form id="contactForm" class="space-y-6">
+                <input type="text" placeholder="Name" required class="w-full p-4 border border-slate-200 dark:border-slate-700 bg-transparent outline-none focus:border-slate-900 transition">
+                <input type="email" placeholder="Email" required class="w-full p-4 border border-slate-200 dark:border-slate-700 bg-transparent outline-none focus:border-slate-900 transition">
+                <textarea placeholder="Message" required rows="4" class="w-full p-4 border border-slate-200 dark:border-slate-700 bg-transparent outline-none focus:border-slate-900 transition"></textarea>
+                <button type="submit" class="w-full py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:opacity-80 transition font-medium text-sm uppercase tracking-widest">Send</button>
+            </form>
+            <div id="formStatus" class="mt-4 p-4 border border-slate-200 hidden text-center">Message Sent.</div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 dark:border-slate-800 text-center text-xs uppercase tracking-widest text-slate-400">
+        <p>© 2026 DANKGOTT DERSIEGER. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            themeToggle.innerText = document.documentElement.classList.contains('dark') ? 'Light' : 'Dark';
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactForm.reset();
+            formStatus.classList.remove('hidden');
+            setTimeout(() => formStatus.classList.add('hidden'), 3000);
+        });
+    </script>
+</body>
+</html>
